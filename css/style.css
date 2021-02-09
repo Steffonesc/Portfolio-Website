@@ -1,27 +1,8 @@
-font-family: 'Big Shoulders Display', cursive;
-img {
-  width: 100%;
-}
-a {
-  color: #ff7f50;
-  text-decoration: none; /* No underlining */
-}
-a:hover {
-  color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-a:visited { /* visited link */
-  color: #ff7f50;
-}
-a:active { /* selected link */
-  color: #994c30;
-}
-
-a:hover,
-a:focus {
-  color: #cc6540;
-  text-decoration: underline;
-}
+/*
+Colors used:
+Primary Color (Blue): #05676e;
+Secondary Color (Crismson Red): #990000;
+*/
 body {
   background-color: #ffffff;
   font-family: 'Big Shoulders Display', cursive;
@@ -30,7 +11,7 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
-
+font-family: 'Big Shoulders Display', cursive;
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -51,4 +32,34 @@ h3 {
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+}
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline;
+}
+a:hover {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:visited { /* visited link */
+  color: #ff7f50;
+}
+a:active { /* selected link */
+  color: #994c30;
+}
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
 }
