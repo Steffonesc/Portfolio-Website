@@ -3,6 +3,47 @@ Colors used:
 Primary Color (Blue): #05676e;
 Secondary Color (Crismson Red): #990000;
 */
+header {
+  background-color: #ffe4c4;
+}
+header {
+  background-color: #ffe4c4;
+  padding: 10px;
+  text-align: center;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.8);
+-moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.8);
+box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.8);
+position: relative;
+width: 100%;
+  }
+  main {
+  padding-top: 133px;
+}
+  nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+selector {
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ffffff;
   font-family: 'Big Shoulders Display', cursive;
@@ -61,4 +102,20 @@ a:active { /* selected link */
   color: #ff7f50;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
+}
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#hero h2 {
+  text-align: center; /* Centers text */
+}
+.logo {
+  max-width: 250px;
+}
+.container {
+    background-color: #ffe4c4;
 }
