@@ -150,7 +150,8 @@ selector {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) { header
+@media only screen and (min-width: 640px) {
+  header {
     text-align: unset;
     padding: 20px 0 13px;
   }
@@ -166,7 +167,7 @@ Medium devices (640px and larger)
   margin-left: auto;
   margin-right: auto;
 }
-
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
