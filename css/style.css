@@ -107,8 +107,7 @@ a:active {
 /* Header Style*/
 header {
   background-color: #ffe4c4;
-  padding: 10px;
-  text-align: unset;
+  padding: 10px 0 4px;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.8);
   -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.8);
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.8);
@@ -117,21 +116,13 @@ header {
 }
 
 main {
-  padding-top: 99.8px;
-}
-
-nav {
-  width: auto;
-  margin-top: 4px;
+  padding-top: 2px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -176,8 +167,41 @@ selector {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   margin: 0 auto;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 [class*="col-"] {
@@ -252,6 +276,7 @@ Medium devices (640px and larger)
     margin-left: auto;
     margin-right: auto;
   }
+
 }
 
 /* ==============================
@@ -300,6 +325,27 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
+  .logo {
+    min-width: 250px;
+  }
+
+  nav > ul > li {
+  display: inline-block;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+nav > ul {
+  margin: 1em 0;
+}
+
 }
 
 /* ==============================
